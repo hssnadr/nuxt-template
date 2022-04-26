@@ -1,0 +1,22 @@
+@use "sass:meta";
+@use "sass:math";
+
+$base-font-size: 16px!default;
+
+// Synthax to call function : rem(5) / rem($size: 5) / rem($size: 5, $base: 10) ...
+@function rem($size, $base: $base-font-size) {
+  @return 1rem * strip-unit(math.div($size, $base));
+}
+
+@function em($size, $base: $base-font-size) {
+  @return 1em * strip-unit(math.div($size, $base));
+}
+
+// From https://css-tricks.com/snippets/sass/strip-unit-function/
+@function strip-unit($number) {
+  @if meta.type-of($number) == 'number' and not math.is-unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+
+  @return $number;
+}

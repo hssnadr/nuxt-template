@@ -1,0 +1,96 @@
+// ---------------------------------------------------------
+//                      Museo
+// ---------------------------------------------------------
+@font-face {
+  font-family: 'MuseoSansW01-Rounded300';
+  src: url('/fonts/Museo/Museo Sans W01 Rounded 300.ttf') format("ttf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSansW01-Rounded500';
+  src: url('/fonts/Museo/Museo Sans W01 Rounded 500.ttf') format("ttf");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSansW01-Rounded700';
+  src: url('/fonts/Museo/Museo Sans W01 Rounded 700.ttf') format("ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+// ---------------------------------------------------------
+//                      Poppins
+// ---------------------------------------------------------
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-ExtraLight') format("ttf");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Light.ttf') format("ttf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-regular.ttf') format("ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Bold.ttf') format("ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-BoldItalic.ttf') format("ttf");
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-BlackItalic.ttf') format("ttf");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-ExtraBoldItalic.ttf') format("ttf");
+  font-weight: 950;
+  font-display: swap;
+  font-style: italic;
+}
+
+// ---------------------------------------------------------
+//                      SharpGrotesk
+// ---------------------------------------------------------
+@font-face {
+  font-family: 'SharpGrotesk';
+  src: url('/fonts/SharpGroteskSmBoldItalic15.otf'); // format("ttf/otf");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}

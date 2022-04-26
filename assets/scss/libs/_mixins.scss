@@ -1,0 +1,97 @@
+@use "sass:map";
+@use "sass:list";
+@use "sass:math";
+@use "sass:meta";
+
+@mixin text-stroke($color: black, $thikness: 1px) {
+  text-shadow: (-1 * $thikness) (-1 * $thikness) $color, $thikness $thikness $color,
+  (-1 * $thikness) $thikness $color, $thikness (-1 * $thikness) $color;
+}
+
+@mixin text-nostroke() {
+  text-shadow: none;
+}
+
+@mixin rotate($rotation: 10) {
+  // Pour appeller dans les fichiers --> @include: rotate(60deg);
+  @include transform(rotate($rotation));
+}
+
+@mixin transform($transform) {
+  // Pour appeller dans les fichiers --> @include: transform(rotate(60deg));
+
+  // A RECHECKER PAR RAPPORT A LA VIDEO
+
+  -ms-transform: transform($transform);
+  -webkit-transform: transform($transform);
+  -o-transform: transform($transform);
+  -moz-transform: transform($transform);
+  transform: transform($transform);
+}
+
+/// FROM --> https://www.sitepoint.com/building-linear-gradient-mixin-sass/
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+
+  background: list.nth(list.nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(
+    legacy-direction($direction),
+    $color-stops
+  );
+  background: linear-gradient($direction, $color-stops);
+}
+/// Convert a direction to legacy syntax
+@function legacy-direction($value) {
+  @if is-direction($value) == false {
+    @error "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
+  }
+
+  $conversion-map: (
+    to top: bottom,
+    to top right: bottom left,
+    to right top: left bottom,
+    to right: left,
+    to bottom right: top left,
+    to right bottom: left top,
+    to bottom: top,
+    to bottom left: top right,
+    to left bottom: right top,
+    to left: right,
+    to left top: right bottom,
+    to top left: bottom right
+  );
+
+  @if map.has-key($conversion-map, $value) {
+    @return map.get($conversion-map, $value);
+  }
+
+  @return 90deg - $value;
+}
+/// Test if `$value` is a valid direction
+@function is-direction($value) {
+  $is-keyword: list.index(
+    (
+      to top,
+      to top right,
+      to right top,
+      to right,
+      to bottom right,
+      to right bottom,
+      to bottom,
+      to bottom left,
+      to left bottom,
+      to left,
+      to left top,
+      to top left
+    ),
+    $value
+  );
+  $is-angle: meta.type-of($value) == 'number' and
+    list.index('deg' 'grad' 'turn' 'rad', math.unit($value));
+
+  @return $is-keyword or $is-angle;
+}

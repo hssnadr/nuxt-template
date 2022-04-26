@@ -1,0 +1,22 @@
+@use "sass:color";
+
+// MAIN
+$base-font-size: 16px; // overight value in function.scss
+$base-color: #ffffff;
+$color-shadow: color.adjust(#000, $alpha: -0.8);
+$primary-color: #000000;
+$secondary-color: #f7091a;
+$lightgrey: #999999;
+$stronggrey: #5c5c5c;
+
+// MOTIONLAB
+$motionlab-black: #2b2b2b;
+$motionlab-purple: #4A52D1;
+$motionlab-yellow: #FFF27A;
+$motionlab-red: #F55B55;
+$motionlab-blue: #7DDEE3;
+
+// BOXYLAB
+$boxy-black: #000;
+$boxy-white: #ffffff;
+$boxy-red: #f7091a;

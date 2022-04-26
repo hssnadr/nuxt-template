@@ -1,0 +1,70 @@
+[
+    {
+      "title": "Montessorizer",
+      "id": "montessorizer",
+      "years": { "y0": "2017", "y1": "2020" },
+      "institutes": ["cri"],
+      "format": ["Regular"],
+      "fields": ["Learning"],
+      "skills": ["UX", "Electronics", "CAO"],
+      "tools": ["illustrator", "catia", "arduino"],
+      "thumbnail": {
+        "link": "https://www.adrienhusson.com/_nuxt/img/cover.edb60ef.png"
+      },
+      "description": "Exploratory project related to kindergarten",
+      "level": 3
+    },
+    {
+      "title": "Sensitive Pen",
+      "id": "sensitive-pen",
+      "years": { "y0": "2020", "y1": "-" },
+      "institutes": ["cri"],
+      "format": ["PhD"],
+      "fields": ["Health", "Learning"],
+      "skills": [],
+      "tools": [],
+      "thumbnail": {
+        "link": "https://prod.isg.bruneau.media/external/?width=2000&height=2000&mode=Default&quality=85&scale=upscalecanvas&source=https%3A%2F%2Fbruneau.simpleworkspace.net%2Fphp%2Fscripts%2FgetFile.php%3Ftype%3DpubAssetBase%26s%26key%3DCykYHut1S5PVKH21jY8u0yRyuovSHW29iZdmucVa1n8YjyHccqg%26t%3D16234160310000%26name%3D90131.jpg"
+      },
+      "description": "PhD thesis",
+      "level": 3
+    },
+    {
+      "title": "Balance Board",
+      "id": "balance-board",
+      "years": { "y0": "2016", "y1": "2016" },
+      "institutes": ["cri"],
+      "format": ["Tutorial"],
+      "fields": ["Health", "Sport"],
+      "skills": [],
+      "tools": ["catia", "puredata"],
+      "thumbnail": {
+        "link": "http://www.movuino.com/wp-content/uploads/2019/09/BalanceBoard_small-300x98.jpg"
+      },
+      "description": "Demonstrator project",
+      "level": 2
+    },
+    {
+      "title": "RGB Lamp",
+      "id": "rgb-lamp",
+      "years": { "y0": "2014", "y1": "2014" },
+      "institutes": ["cri"],
+      "format": ["Demo"],
+      "fields": ["Design"],
+      "skills": ["Interactive Design", "3D Modeling", "3D Rendering"],
+      "tools": ["catia", "arduino", "processing"],
+      "thumbnail": {
+        "link": "http://www.movuino.com/wp-content/uploads/2019/07/RGBLamp-300x240.jpg"
+      },
+      "medias": [
+        { "type": "image", "id": "rgb-gif", "link": "https://raw.githubusercontent.com/hssnadr/RGB-Lamp-Demonstrator/master/images/RGBLamp_animation.gif" },
+        {
+          "type": "iframe",
+          "code": "<iframe title='vimeo-player' src='https://player.vimeo.com/video/197767041?h=25720bd967'class='responsive-iframe'  frameborder='0' allowfullscreen></iframe>"
+        }
+      ],
+      "description": "Demonstrator project using gesture recognition",
+      "level": 2
+    }
+  ]
+  

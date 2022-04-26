@@ -1,0 +1,25 @@
+[
+    {
+      "id": "sensitive-pen",
+      "parts": [
+        { "id": "A", "name": "Movuino setup"},
+        { "id": "B", "name": "Pen setup"},
+        { "id": "C", "name": "Record!"},
+        { "id": "D", "name": "Python setup"},
+        { "id": "E", "name": "Export data"}
+      ],
+      "steps": [
+        { "partId": "A", "name": "Print and fix Movuino support", "camera": "top"},
+        { "partId": "A", "name": "Plug sensitive shield", "camera": "top"},
+        { "partId": "A", "name": "Plug matrix sensor", "camera": "left"},
+        { "partId": "B", "name": "Insert pressure sensor support", "camera": "auto"},
+        { "partId": "B", "name": "Insert pressure sensor", "camera": "auto"},
+        { "partId": "B", "name": "Plug pressure sensor", "camera": "left"},
+        { "partId": "C", "name": "Press button to start recording", "camera": "top"},
+        { "partId": "C", "name": "Press button to stop recording", "camera": "top"},
+        { "partId": "D", "name": "Download repository", "camera": "top"},
+        { "partId": "D", "name": "Install libraries", "camera": "top"},
+        { "partId": "E", "name": "Launch python script", "camera": "top"}
+      ]
+    }
+  ]
